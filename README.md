@@ -1,1 +1,1 @@
-# AppStore - *swift implementation*
+# AppStore - *Swift implementation*
