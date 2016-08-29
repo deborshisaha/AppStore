@@ -12,6 +12,7 @@
 		C2ABCAB81D73502200EAC895 /* ASHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ABCAB71D73502200EAC895 /* ASHomeController.swift */; };
 		C2ABCABD1D73502200EAC895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2ABCABC1D73502200EAC895 /* Assets.xcassets */; };
 		C2ABCAC01D73502200EAC895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2ABCABE1D73502200EAC895 /* LaunchScreen.storyboard */; };
+		C2E89F0A1D742525007103BF /* ASCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E89F091D742525007103BF /* ASCategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C2ABCABC1D73502200EAC895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2ABCABF1D73502200EAC895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2ABCAC11D73502200EAC895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E89F091D742525007103BF /* ASCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASCategoryCell.swift; path = Views/ASCategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				C2ABCABC1D73502200EAC895 /* Assets.xcassets */,
 				C2ABCABE1D73502200EAC895 /* LaunchScreen.storyboard */,
 				C2ABCAC11D73502200EAC895 /* Info.plist */,
+				C2E89F091D742525007103BF /* ASCategoryCell.swift */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -91,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Semicolon Design";
 				TargetAttributes = {
 					C2ABCAB11D73502200EAC895 = {
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E89F0A1D742525007103BF /* ASCategoryCell.swift in Sources */,
 				C2ABCAB81D73502200EAC895 /* ASHomeController.swift in Sources */,
 				C2ABCAB61D73502200EAC895 /* AppDelegate.swift in Sources */,
 			);
@@ -178,8 +182,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -224,8 +230,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -271,6 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = design.semicolon.ios.AppStore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
